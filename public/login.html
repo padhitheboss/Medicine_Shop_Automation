@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
     <div class="row">
         <div class="col-md-6 mx-auto p-0">
@@ -19,12 +18,11 @@
                             for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab"
                             class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
                         <div class="login-space">
-                            <form action="/auth/login" method="post">
+                            <form action="/auth/login" method="POST">
                                 <div class="login">
                                     <div class="group">
                                         <label for="user" class="label"></label>
-                                        <input id="email" type="email" class="input" placeholder="Email ID"
-                                            name="email">
+                                        <input id="email" type="email" class="input" placeholder="Email ID" name="email">
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label"></label>
@@ -35,7 +33,7 @@
                                     <div class="hr"></div>
                                 </div>
                             </form>
-                            <form action="/auth/register" method="post">
+                            <form action="/auth/register" method="POST">
                                 <div class="sign-up-form">
                                     <div class="group">
                                         <label for="user" class="label"></label>
@@ -48,12 +46,12 @@
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label"></label>
-                                        <input id="pass" type="password" class="input" data-type="password"
+                                        <input id="pass" type="password" class="input" name="password" data-type="password"
                                             placeholder="Password">
                                     </div>
                                     <div class="group">
                                         <label for="pass" class="label"></label>
-                                        <input id="pass" type="password" class="input" name="password"
+                                        <input id="pass" type="password" class="input" name="confpassword"
                                             data-type="password" placeholder="Confirm Password">
                                     </div>
                                     <div class="group">
@@ -67,10 +65,10 @@
                                             placeholder="Contact Number">
                                     </div>
                                     <div class="group">
-                                        <input type="checkbox" id="vehicle1" name="group">Shop Owner
-                                        <input type="checkbox" id="vehicle1" name="group">Customer
-                                        <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Doctor -->
-                                        <input type="checkbox" id="vehicle1" name="group">Supplier
+                                        <input type="checkbox" id="shop" name="group">Shop Owner
+                                        <input type="checkbox" id="cust" name="group">Customer
+                                         <input type="checkbox" id="doc" name="group" value="Bike">Doctor
+                                        <input type="checkbox" id="sup" name="group">Supplier
                                     </div>
                                     <div class="group"> <input type="submit" class="button" value="Register Now"> </div>
                             </form>

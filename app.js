@@ -4,7 +4,7 @@ const express = require("express");
 const mysql =  require("mysql");
 const db = require(__dirname + '/connect.js');
 const app =  express();
-
+const bodyParser = require('body-parser');
 const hostname = process.env.HOST;
 const port = process.env.PORT;
 
@@ -16,6 +16,10 @@ const port = process.env.PORT;
 // });
 
 app.use('/static', express.static(__dirname + '/public'));
+app.use(express.json());
+app.use(express.urlencoded({
+  extended: false
+}));
 
 // db.connect(function(err) {
 // 	if (err) throw err;
@@ -34,4 +38,4 @@ app.use('/auth', require('./routes/auth'));
 
 app.listen(port,hostname, () => {
 	console.log(`Server running at http://${hostname}:${port}/`);
-});
+  });
