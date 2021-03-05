@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-6 mx-auto p-0">
+                <div class="card">
+                    <div class="login-box">
+                        <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                            <div class="login-space">
+                                <form action="/auth/login" method="POST">
+                                    <div class="login">
+                                        <div class="group"> <label for="user" class="label"></label> <input id="email" type="email" class="input" placeholder="Email ID"> </div>
+                                        <div class="group"> <label for="pass" class="label"></label> <input id="pass" type="password" class="input" data-type="password" placeholder="Password"> </div>
+                                        <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                        <div class="hr"></div>
+                                    </div>
+                                </form>
+
+                                <div class="sign-up-form">
+                                    <div class="group"> <label for="user" class="label"></label> <input id="name" type="text" class="input" placeholder="Name"> </div>
+                                    <div class="group"> <label for="email" class="label"></label> <input id="email" type="email" class="input" data-type="email" placeholder="Email Address"> </div>
+                                    <div class="group"> <label for="pass" class="label"></label> <input id="pass" type="password" class="input" data-type="password" placeholder="Password"> </div>
+                                    <div class="group"> <label for="pass" class="label"></label> <input id="pass" type="password" class="input" data-type="password" placeholder="Confirm Password"> </div>
+                                    <div class="group"> <label for="address" class="label"></label> <input id="address" type="text" class="input" placeholder="Address"> </div>
+                                    <div class="group"> <label for="number" class="label"></label> <input id="number" type="text" class="input" placeholder="Contact Number"> </div>
+                                    <div class="group">
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Shop Owner
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Customer
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Doctor
+                                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">Supplier
+                                    </div>
+                                    <div class="group"> <input type="submit" class="button" value="Register Now"> </div>
+                                    
+                                    <div class="hr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
+
