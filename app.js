@@ -7,6 +7,7 @@ const app =  express();
 const bodyParser = require('body-parser');
 const hostname = process.env.HOST;
 const port = process.env.PORT;
+const cookieParser = require('cookie-parser');
 
 // const db = mysql.createConnection({
 // 	host: "192.168.0.5",
@@ -17,6 +18,7 @@ const port = process.env.PORT;
 
 app.use('/static', express.static(__dirname + '/public'));
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({
   extended: false
 }));
